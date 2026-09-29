@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F1C"/>
+      <stop offset="60%" stop-color="#173B2D"/>
+      <stop offset="100%" stop-color="#0E281F"/>
+    </linearGradient>
+    <radialGradient id="beamLight" cx="50%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#F3D21A" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#D4AF37" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#173B2D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2A3"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA820A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="104" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Decorative Ring -->
+  <circle cx="256" cy="256" r="218" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.65"/>
+  <circle cx="256" cy="256" r="202" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.4" stroke-dasharray="8 6"/>
+
+  <!-- Light Beams -->
+  <path d="M256 160 L440 80 L440 220 Z" fill="url(#beamLight)" opacity="0.75"/>
+  <path d="M256 160 L72 80 L72 220 Z" fill="url(#beamLight)" opacity="0.75"/>
+
+  <!-- Lighthouse Base & Rocks -->
+  <path d="M150 400 Q256 385 362 400 L376 430 Q256 442 136 430 Z" fill="url(#goldGrad)"/>
+
+  <!-- Lighthouse Tower -->
+  <path d="M224 388 L232 200 L280 200 L288 388 Z" fill="#FFFFFF"/>
+  <!-- Tower Stripes / Bands -->
+  <path d="M228 250 L284 250 L282 285 L230 285 Z" fill="#173B2D"/>
+  <path d="M226 325 L286 325 L285 355 L225 355 Z" fill="#173B2D"/>
+  
+  <!-- Gallery & Lantern Room -->
+  <rect x="220" y="185" width="72" height="16" rx="4" fill="url(#goldGrad)"/>
+  <rect x="228" y="148" width="56" height="37" rx="3" fill="#FFFFFF" opacity="0.95"/>
+  <circle cx="256" cy="166" r="14" fill="#F3D21A"/>
+  
+  <!-- Dome Roof -->
+  <path d="M224 148 Q256 116 288 148 Z" fill="url(#goldGrad)"/>
+  <line x1="256" y1="116" x2="256" y2="102" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Musical Notes radiating with light -->
+  <g fill="#F3D21A" transform="translate(320, 110) scale(0.9)">
+    <circle cx="12" cy="30" r="7"/>
+    <circle cx="34" cy="24" r="7"/>
+    <path d="M17 30 L17 10 L39 4 L39 24" stroke="#F3D21A" stroke-width="4" fill="none"/>
+    <polygon points="17,10 39,4 39,12 17,18"/>
+  </g>
+
+  <g fill="#F3D21A" transform="translate(140, 115) scale(0.85)">
+    <circle cx="12" cy="24" r="6"/>
+    <path d="M17 24 L17 6 Q28 6 30 16" stroke="#F3D21A" stroke-width="3.5" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-dark: #0B1F1C;
+    --deep-green: #173B2D;
+    --forest-green: #24513B;
+    --gold: #D4AF37;
+    --lighthouse-yellow: #F3D21A;
+    --warm-white: #F7F7F2;
+    --muted-text: #AAB8B2;
+    --success: #4F9D69;
+    --error: #C94A4A;
+    --warning: #D69E2E;
+  }
+
+  body {
+    background-color: #0B1F1C;
+    color: #F7F7F2;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1F1C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24513B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Script font class for Light House stylized title */
+.font-brand-script {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}

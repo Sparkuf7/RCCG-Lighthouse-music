@@ -1,0 +1,6 @@
+{
+  "name": "RCCG Lighthouse Music Ministry",
+  "description": "Comprehensive Music Ministry Management & Development System for RCCG Lighthouse. Manages member development, rehearsals, services, attendance with QR codes, repertoire, recruitment pipeline, and leadership progression towards the 30-member target.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
